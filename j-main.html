@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			border: black solid 1px;
+		}
+		.main{
+			background-color: navy;
+		}
+		
+		.mainInner{
+			background-color: green;
+			margin: 0 auto;
+			display: block;
+			padding-bottom:0%;
+		}
+		@media screen and (min-width: 600px){
+			.mainInner{
+				display: flex;
+			}	
+		}
+		@media screen and (min-width: 960px){
+			.mainInner{
+				display: flex;
+				width: 960px;
+				/*height: 700px;
+*/				padding-bottom: 0%;
+			}	
+		}
+		
+		.article{
+			background-color: yellowgreen;
+			flex: 1;
+			display:flex;
+			flex-direction: column-reverse;
+		}
+		.article img{
+			width: 100%;
+			flex:1;
+		}
+		@media screen and (min-width: 600px){
+			.article{
+				display: block;
+			}	
+		}
+		.image{
+			background-color: gold;
+			flex: 1;
+		}
+		.image img{
+
+		}
+		.text{
+			background-color: magenta;
+/*			flex:1;
+			overflow: hidden;*/
+			height: 400px;
+			overflow: scroll;
+		}
+		.textInner{
+
+		}
+		.aside{
+			background-color: crimson;
+			flex: 1;
+			overflow: scroll;
+			height:637px;
+		}
+		.asideInner{
+
+		}
+	</style>
+</head>
+<body>
+	<main class="main">
+		<div class="mainInner">
+			<article class="article">
+				<img src="dojo.jpg" alt="">
+				<div class="text">
+					<div class="textInner">
+						
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo explicabo consequuntur nobis itaque amet unde, porro fugit odio debitis earum asperiores ad ratione alias, velit inventore a voluptatem ab illo!</div>
+						<div>Velit fugiat sunt quasi numquam ad magnam, dolorem fugit aperiam iusto praesentium aliquam, incidunt suscipit veritatis amet placeat harum enim. Iusto labore odit voluptate, perferendis sapiente fugiat eaque fugit iure.</div>
+						<div>Totam ad sed voluptas iusto cum veniam quisquam reprehenderit facilis qui accusantium nihil veritatis repellendus nam pariatur unde tempore exercitationem vel, odio, nostrum recusandae quos. Repudiandae necessitatibus rem adipisci, quae.</div>
+						<div>Pariatur quidem cupiditate officiis recusandae totam ipsa et debitis, laboriosam quasi asperiores cum quo nemo quod aut nulla iusto vero. Libero voluptas debitis, impedit totam voluptatem dolore voluptates reprehenderit minima.</div>
+						<div>Non, illum ullam optio nam. Id aperiam magnam quasi possimus debitis, assumenda reiciendis dolore quidem inventore, nisi hic itaque aliquid adipisci est aliquam. Sapiente saepe ea officiis, praesentium, delectus beatae!</div>
+						<div>Aliquid cum facilis enim obcaecati veniam modi ut reprehenderit. Impedit repudiandae tempore totam recusandae dicta iure possimus debitis, magni cupiditate rerum qui nemo fugiat, quo quam molestias ipsum ducimus autem.</div>
+						<div>Ipsa odit voluptatem suscipit sed numquam, asperiores assumenda. Obcaecati quaerat, quod doloribus, deleniti maxime itaque fuga architecto numquam, totam recusandae reprehenderit impedit. Quisquam recusandae vitae consequuntur itaque, deleniti, nesciunt totam!</div>
+               	 </div>
+				</div>
+			</article>
+			<aside class="aside">
+				<div class="asideInner">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo explicabo consequuntur nobis itaque amet unde, porro fugit odio debitis earum asperiores ad ratione alias, velit inventore a voluptatem ab illo!</div>
+					<div>Velit fugiat sunt quasi numquam ad magnam, dolorem fugit aperiam iusto praesentium aliquam, incidunt suscipit veritatis amet placeat harum enim. Iusto labore odit voluptate, perferendis sapiente fugiat eaque fugit iure.</div>
+					<div>Totam ad sed voluptas iusto cum veniam quisquam reprehenderit facilis qui accusantium nihil veritatis repellendus nam pariatur unde tempore exercitationem vel, odio, nostrum recusandae quos. Repudiandae necessitatibus rem adipisci, quae.</div>
+					<div>Pariatur quidem cupiditate officiis recusandae totam ipsa et debitis, laboriosam quasi asperiores cum quo nemo quod aut nulla iusto vero. Libero voluptas debitis, impedit totam voluptatem dolore voluptates reprehenderit minima.</div>
+					<div>Non, illum ullam optio nam. Id aperiam magnam quasi possimus debitis, assumenda reiciendis dolore quidem inventore, nisi hic itaque aliquid adipisci est aliquam. Sapiente saepe ea officiis, praesentium, delectus beatae!</div>
+					<div>Non, illum ullam optio nam. Id aperiam magnam quasi possimus debitis, assumenda reiciendis dolore quidem inventore, nisi hic itaque aliquid adipisci est aliquam. Sapiente saepe ea officiis, praesentium, delectus beatae!</div>
+					<div>Non, illum ullam optio nam. Id aperiam magnam quasi possimus debitis, assumenda reiciendis dolore quidem inventore, nisi hic itaque aliquid adipisci est aliquam. Sapiente saepe ea officiis, praesentium, delectus beatae!</div>
+					<div>Non, illum ullam optio nam. Id aperiam magnam quasi possimus debitis, assumenda reiciendis dolore quidem inventore, nisi hic itaque aliquid adipisci est aliquam. Sapiente saepe ea officiis, praesentium, delectus beatae!</div>
+					<div>Aliquid cum facilis enim obcaecati veniam modi ut reprehenderit. Impedit repudiandae tempore totam recusandae dicta iure possimus debitis, magni cupiditate rerum qui nemo fugiat, quo quam molestias ipsum ducimus autem.</div>
+					<div>Ipsa odit voluptatem suscipit sed numquam, asperiores assumenda. Obcaecati quaerat, quod doloribus, deleniti maxime itaque fuga architecto numquam, totam recusandae reprehenderit impedit. Quisquam recusandae vitae consequuntur itaque, deleniti, nesciunt totam!</div>
+				</div>
+			</aside>
+		</div>
+	</main>
+
+</body>
+</html>
